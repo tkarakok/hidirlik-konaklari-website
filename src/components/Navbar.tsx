@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src= "/images/.logo.png" size={50} />
+            <img src= "/images/logo.png" size={50} />
             <span className={`font-serif text-xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
               HIDIRLIK KONAKLARI
             </span>
