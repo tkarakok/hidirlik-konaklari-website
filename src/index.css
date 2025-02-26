@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: #8B5A2B;
+  --swiper-navigation-size: 30px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card:hover img, 
+.room-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.service-card img, 
+.room-card img {
+  transition: transform 0.5s ease;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  color: #8B5A2B !important;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8B5A2B !important;
+}
