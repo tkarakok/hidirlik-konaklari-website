@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <img 
-              src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              src="/images/hotel.jpg" 
               alt="Safranbolu Ottoman Hotel" 
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
