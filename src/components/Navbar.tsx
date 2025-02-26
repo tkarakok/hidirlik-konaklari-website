@@ -40,9 +40,9 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Bed className={`mr-2 ${isScrolled ? 'text-primary' : 'text-white'}`} size={28} />
+            <Bed className={`mr-2 ${isScrolled ? 'text-primary' : 'text-white'}`} size={50} />
             <span className={`font-serif text-xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
-              Ottoman Hotel
+              HIDIRLIK KONAKLARI
             </span>
           </div>
 
