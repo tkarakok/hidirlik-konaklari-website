@@ -26,11 +26,11 @@ const About: React.FC = () => {
             </p>
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center">
-                <h3 className="text-primary text-4xl font-bold mb-2">1782</h3>
+                <h3 className="text-primary text-4xl font-bold mb-2">2019</h3>
                 <p className="text-gray-600">{t('about.established')}</p>
               </div>
               <div className="text-center">
-                <h3 className="text-primary text-4xl font-bold mb-2">15</h3>
+                <h3 className="text-primary text-4xl font-bold mb-2">19</h3>
                 <p className="text-gray-600">{t('about.rooms')}</p>
               </div>
             </div>
