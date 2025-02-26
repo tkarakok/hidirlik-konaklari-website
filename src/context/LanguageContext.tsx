@@ -9,62 +9,6 @@ interface LanguageContextType {
 }
 
 const translations = {
-  en: {
-    // Navbar
-    'home': 'Home',
-    'about': 'About',
-    'services': 'Services',
-    'rooms': 'Rooms',
-    'gallery': 'Gallery',
-    
-    // Hero
-    'hero.title': 'Experience Authentic Ottoman Luxury',
-    'hero.subtitle': 'A historic retreat in the heart of Safranbolu\'s UNESCO World Heritage site',
-    'hero.button': 'Discover Our Hotel',
-    
-    // About
-    'about.title': 'Our Story',
-    'about.paragraph1': 'Nestled in the historic town of Safranbolu, a UNESCO World Heritage site, our hotel stands as a testament to the rich Ottoman heritage of Turkey. Originally built in the 18th century as a merchant\'s mansion, our property has been meticulously restored to preserve its authentic architecture while offering modern comforts.',
-    'about.paragraph2': 'Each corner of our hotel tells a story of the past, from the hand-carved wooden ceilings to the traditional Turkish furnishings. We invite you to step back in time and experience the grandeur of Ottoman hospitality in one of Turkey\'s most beautiful historic towns.',
-    'about.established': 'Year Established',
-    'about.rooms': 'Unique Rooms',
-    
-    // Services
-    'services.title': 'Our Services',
-    'services.subtitle': 'Experience the finest Ottoman hospitality with our carefully curated services designed to make your stay memorable.',
-    'services.breakfast.title': 'Traditional Breakfast',
-    'services.breakfast.description': 'Start your day with an authentic Turkish breakfast featuring local specialties from Safranbolu region.',
-    'services.cuisine.title': 'Ottoman Cuisine',
-    'services.cuisine.description': 'Experience the rich flavors of Ottoman cuisine at our restaurant, prepared with traditional recipes and local ingredients.',
-    'services.wifi.title': 'Free Wi-Fi',
-    'services.wifi.description': 'Stay connected with complimentary high-speed Wi-Fi available throughout the hotel for all our guests.',
-    'services.tours.title': 'Guided Tours',
-    'services.tours.description': 'Discover the hidden gems of Safranbolu with our expert local guides who will take you through the historic streets and landmarks.',
-    
-    // Rooms
-    'rooms.title': 'Our Rooms',
-    'rooms.subtitle': 'Step into history with our beautifully restored rooms that blend Ottoman elegance with modern comfort.',
-    'rooms.features': 'Room Features:',
-    'rooms.ottoman.title': 'Ottoman Suite',
-    'rooms.ottoman.description': 'Our most luxurious accommodation featuring authentic Ottoman decor and spacious living areas.',
-    'rooms.heritage.title': 'Heritage Room',
-    'rooms.heritage.description': 'Experience the charm of traditional Turkish architecture with modern amenities for your comfort.',
-    'rooms.family.title': 'Family Room',
-    'rooms.family.description': 'Spacious accommodation perfect for families, with separate sleeping areas and traditional furnishings.',
-    
-    // Gallery
-    'gallery.title': 'Gallery',
-    'gallery.subtitle': 'Take a visual journey through our beautiful hotel and experience the charm of Safranbolu.',
-    
-    // Footer
-    'footer.description': 'Experience authentic Ottoman luxury in the heart of historic Safranbolu.',
-    'footer.contact': 'Contact',
-    'footer.address': 'Safranbolu Old Town, Karabük, Turkey',
-    'footer.quickLinks': 'Quick Links',
-    'footer.location': 'Location',
-    'footer.locationDescription': 'Located in the UNESCO World Heritage site of Safranbolu, our hotel is just a short walk from the historic market square and other attractions.',
-    'footer.rights': 'All rights reserved.',
-  },
   tr: {
     // Navbar
     'home': 'Ana Sayfa',
@@ -120,7 +64,64 @@ const translations = {
     'footer.location': 'Konum',
     'footer.locationDescription': 'Safranbolu\'nun UNESCO Dünya Mirası bölgesinde yer alan otelimiz, tarihi pazar meydanı ve diğer cazibe merkezlerine kısa bir yürüyüş mesafesindedir.',
     'footer.rights': 'Tüm hakları saklıdır.',
+  },
+  en: {
+    // Navbar
+    'home': 'Home',
+    'about': 'About',
+    'services': 'Services',
+    'rooms': 'Rooms',
+    'gallery': 'Gallery',
+    
+    // Hero
+    'hero.title': 'Experience Authentic Ottoman Luxury',
+    'hero.subtitle': 'A historic retreat in the heart of Safranbolu\'s UNESCO World Heritage site',
+    'hero.button': 'Discover Our Hotel',
+    
+    // About
+    'about.title': 'Our Story',
+    'about.paragraph1': 'Nestled in the historic town of Safranbolu, a UNESCO World Heritage site, our hotel stands as a testament to the rich Ottoman heritage of Turkey. Originally built in the 18th century as a merchant\'s mansion, our property has been meticulously restored to preserve its authentic architecture while offering modern comforts.',
+    'about.paragraph2': 'Each corner of our hotel tells a story of the past, from the hand-carved wooden ceilings to the traditional Turkish furnishings. We invite you to step back in time and experience the grandeur of Ottoman hospitality in one of Turkey\'s most beautiful historic towns.',
+    'about.established': 'Year Established',
+    'about.rooms': 'Unique Rooms',
+    
+    // Services
+    'services.title': 'Our Services',
+    'services.subtitle': 'Experience the finest Ottoman hospitality with our carefully curated services designed to make your stay memorable.',
+    'services.breakfast.title': 'Traditional Breakfast',
+    'services.breakfast.description': 'Start your day with an authentic Turkish breakfast featuring local specialties from Safranbolu region.',
+    'services.cuisine.title': 'Ottoman Cuisine',
+    'services.cuisine.description': 'Experience the rich flavors of Ottoman cuisine at our restaurant, prepared with traditional recipes and local ingredients.',
+    'services.wifi.title': 'Free Wi-Fi',
+    'services.wifi.description': 'Stay connected with complimentary high-speed Wi-Fi available throughout the hotel for all our guests.',
+    'services.tours.title': 'Guided Tours',
+    'services.tours.description': 'Discover the hidden gems of Safranbolu with our expert local guides who will take you through the historic streets and landmarks.',
+    
+    // Rooms
+    'rooms.title': 'Our Rooms',
+    'rooms.subtitle': 'Step into history with our beautifully restored rooms that blend Ottoman elegance with modern comfort.',
+    'rooms.features': 'Room Features:',
+    'rooms.ottoman.title': 'Ottoman Suite',
+    'rooms.ottoman.description': 'Our most luxurious accommodation featuring authentic Ottoman decor and spacious living areas.',
+    'rooms.heritage.title': 'Heritage Room',
+    'rooms.heritage.description': 'Experience the charm of traditional Turkish architecture with modern amenities for your comfort.',
+    'rooms.family.title': 'Family Room',
+    'rooms.family.description': 'Spacious accommodation perfect for families, with separate sleeping areas and traditional furnishings.',
+    
+    // Gallery
+    'gallery.title': 'Gallery',
+    'gallery.subtitle': 'Take a visual journey through our beautiful hotel and experience the charm of Safranbolu.',
+    
+    // Footer
+    'footer.description': 'Experience authentic Ottoman luxury in the heart of historic Safranbolu.',
+    'footer.contact': 'Contact',
+    'footer.address': 'Safranbolu Old Town, Karabük, Turkey',
+    'footer.quickLinks': 'Quick Links',
+    'footer.location': 'Location',
+    'footer.locationDescription': 'Located in the UNESCO World Heritage site of Safranbolu, our hotel is just a short walk from the historic market square and other attractions.',
+    'footer.rights': 'All rights reserved.',
   }
+  
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
