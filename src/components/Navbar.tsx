@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <img src= "/images/logo.png" style={{ width: `100px`, height: `100px` }} />
             <span className={`font-serif text-xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
-              HIDIRLIK KONAKLARI
+              
             </span>
           </div>
 
