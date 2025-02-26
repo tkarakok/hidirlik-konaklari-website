@@ -11,7 +11,6 @@ const About: React.FC = () => {
           <div className="md:w-1/2 mb-10 md:mb-0">
             <img 
               src="/images/hotel.jpg" 
-              alt="Safranbolu Ottoman Hotel" 
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
           </div>
