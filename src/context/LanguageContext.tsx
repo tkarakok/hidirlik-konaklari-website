@@ -26,7 +26,7 @@ const translations = {
     'about.title': 'Hikayemiz',
     'about.paragraph1': 'Hıdırlık Konakları, Safranbolu\'nun benzersiz tarihî dokusuyla modern konaklama hizmetini buluşturan özel bir mekan olarak 2019 yılında misafirlerine kapılarını açtı. Geleneksel Safranbolu mimarisinin zarif detayları ile inşa edilen konağımız, dış yapısındaki tarihi dokuyu korurken, iç mekanında sunduğu modern olanaklarla konforlu bir otel deneyimi sunmaktadır.',
     'about.paragraph2': 'Her odasında geleneksel Türk misafirperverliğini hissedebileceğiniz Hıdırlık Konakları, tarihi Safranbolu\'yu keşfederken modern dünyadan ödün vermek istemeyen misafirlerimiz için ideal bir konaklama seçeneğidir. Konaklarımızda, geçmişin zarafetini ve geleceğin konforunu bir arada bulacak, kendinizi evinizde gibi hissedeceksiniz.',
-    'about.paragraph3': ' Safranbolu\'nun tarihi sokaklarında huzurlu bir gezintinin ardından, Hıdırlık Konakları’nda kendinizi dinlendirebilir, eşsiz bir konaklama deneyimiyle şehrin kültürel mirasını keşfetmeye devam edebilirsiniz.'
+    'about.paragraph3': ' Safranbolu\'nun tarihi sokaklarında huzurlu bir gezintinin ardından, Hıdırlık Konakları’nda kendinizi dinlendirebilir, eşsiz bir konaklama deneyimiyle şehrin kültürel mirasını keşfetmeye devam edebilirsiniz.',
     'about.established': 'Kuruluş Yılı',
     'about.rooms': 'Benzersiz Oda',
     
