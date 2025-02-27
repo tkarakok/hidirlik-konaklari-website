@@ -18,14 +18,15 @@ const translations = {
     'gallery': 'Galeri',
     
     // Hero
-    'hero.title': 'TARİHİ DOKU MODERN HİZMET',
-    'hero.subtitle': 'Safranbolu\'nun UNESCO Dünya Mirası bölgesinin kalbinde tarihi bir sığınak',
-    'hero.button': 'Otelimizi Keşfedin',
+    'hero.title': 'TARİHİ MİMARİ MODERN KONAKLAMA',
+    'hero.subtitle': 'UNESCO Dünya Mirası Safranbolu\'nun tarihi merkezinin kalbinde geleneksel mimari modern konfor',
+    'hero.button': 'Konağımızı Keşfedin',
     
     // About
     'about.title': 'Hikayemiz',
-    'about.paragraph1': 'UNESCO Dünya Mirası olan tarihi Safranbolu kasabasında yer alan otelimiz, Türkiye\'nin zengin Osmanlı mirasının bir kanıtıdır. 18. yüzyılda bir tüccar konağı olarak inşa edilen mülkümüz, otantik mimarisini korurken modern konforlar sunmak için titizlikle restore edilmiştir.',
-    'about.paragraph2': 'Otelimizin her köşesi, el oyması ahşap tavanlardan geleneksel Türk döşemelerine kadar geçmişin bir hikayesini anlatır. Sizi zamanda geriye götürmeye ve Türkiye\'nin en güzel tarihi kasabalarından birinde Osmanlı misafirperverliğinin ihtişamını yaşamaya davet ediyoruz.',
+    'about.paragraph1': 'Hıdırlık Konakları, Safranbolu\'nun benzersiz tarihî dokusuyla modern konaklama hizmetini buluşturan özel bir mekan olarak 2019 yılında misafirlerine kapılarını açtı. Geleneksel Safranbolu mimarisinin zarif detayları ile inşa edilen konağımız, dış yapısındaki tarihi dokuyu korurken, iç mekanında sunduğu modern olanaklarla konforlu bir otel deneyimi sunmaktadır.',
+    'about.paragraph2': 'Her odasında geleneksel Türk misafirperverliğini hissedebileceğiniz Hıdırlık Konakları, tarihi Safranbolu\'yu keşfederken modern dünyadan ödün vermek istemeyen misafirlerimiz için ideal bir konaklama seçeneğidir. Konaklarımızda, geçmişin zarafetini ve geleceğin konforunu bir arada bulacak, kendinizi evinizde gibi hissedeceksiniz.',
+    'about.paragraph3': ' Safranbolu\'nun tarihi sokaklarında huzurlu bir gezintinin ardından, Hıdırlık Konakları’nda kendinizi dinlendirebilir, eşsiz bir konaklama deneyimiyle şehrin kültürel mirasını keşfetmeye devam edebilirsiniz.'
     'about.established': 'Kuruluş Yılı',
     'about.rooms': 'Benzersiz Oda',
     
