@@ -18,7 +18,7 @@ const translations = {
     'gallery': 'Galeri',
     
     // Hero
-    'hero.title': 'Otantik Osmanlı Lüksünü Yaşayın',
+    'hero.title': 'TARİHİ DOKU MODERN HİZMET',
     'hero.subtitle': 'Safranbolu\'nun UNESCO Dünya Mirası bölgesinin kalbinde tarihi bir sığınak',
     'hero.button': 'Otelimizi Keşfedin',
     
