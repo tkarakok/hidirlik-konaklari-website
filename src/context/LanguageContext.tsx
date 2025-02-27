@@ -97,7 +97,7 @@ const translations = {
     'services.wifi.title': 'Free Wi-Fi',
     'services.wifi.description': 'Stay connected with free high-speed Wi-Fi available throughout the hotel for all our guests.',
     'services.tours.title': 'Free Parking',
-    'services.tours.description': 'While providing a comfortable accommodation experience, we offer free parking so you can safely park your vehicle.'
+    'services.tours.description': 'While providing a comfortable accommodation experience, we offer free parking so you can safely park your vehicle.',
 
 
     // Rooms
