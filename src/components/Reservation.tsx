@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useLanguage } from '../context/LanguageContext';
 const form = document.getElementById('reservationForm') as HTMLFormElement;
 const checkinInput = document.getElementById('checkin') as HTMLInputElement;
@@ -8,7 +8,7 @@ const childrenInput = document.getElementById('children') as HTMLInputElement;
 const phoneInput = document.getElementById('phone') as HTMLInputElement;
 
 const Reservation : React.FC= () => {
-    
+
   const [checkin, setCheckin] = useState('');
   const [checkout, setCheckout] = useState('');
   const [adults, setAdults] = useState(1);
