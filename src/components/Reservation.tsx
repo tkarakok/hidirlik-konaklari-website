@@ -19,9 +19,8 @@ const Reservation : React.FC= () => {
     event.preventDefault();
     console.log('Form submitted');
   };
-
-  return (
-    <div style={{ padding: '20px', border: '1px solid black' }}>
+    return (
+    <div className="reservation-form-container">
       <h2>Rezervasyon Yap</h2>
       <form onSubmit={handleSubmit}>
         <label>Check-in Tarihi:</label>
@@ -30,7 +29,6 @@ const Reservation : React.FC= () => {
           value={checkin}
           onChange={(e) => setCheckin(e.target.value)}
         />
-        <br />
 
         <label>Check-out Tarihi:</label>
         <input
@@ -38,36 +36,36 @@ const Reservation : React.FC= () => {
           value={checkout}
           onChange={(e) => setCheckout(e.target.value)}
         />
-        <br />
 
         <label>Yetişkin Sayısı:</label>
         <input
           type="number"
           value={adults}
           onChange={(e) => setAdults(Number(e.target.value))}
+          min="1"
         />
-        <br />
 
         <label>Çocuk Sayısı:</label>
         <input
           type="number"
           value={children}
           onChange={(e) => setChildren(Number(e.target.value))}
+          min="0"
         />
-        <br />
 
         <label>Telefon Numarası:</label>
         <input
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
+          pattern="[0-9]{10}"
         />
-        <br />
 
         <button type="submit">Rezervasyon Yap</button>
       </form>
     </div>
-  );
+    );
+ 
 };
 
 export default Reservation;
