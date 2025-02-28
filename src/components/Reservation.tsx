@@ -21,55 +21,57 @@ const Reservation: React.FC = () => {
     };
     return (
         <section id="gallery" className="py-20 bg-gray-50">
-            <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('reservation.title')}</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {t('resevation.subtitle')}
-          </p>
-        </div>
-            <div className="reservation-form-container">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('reservation.title')}</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        {t('resevation.subtitle')}
+                    </p>
+                </div>
+                <div className="reservation-form-container">
 
-                <form onSubmit={handleSubmit}>
-                    <label>Check-in Tarihi:</label>
-                    <input
-                        type="date"
-                        value={checkin}
-                        onChange={(e) => setCheckin(e.target.value)}
-                    />
+                    <form onSubmit={handleSubmit}>
+                        <label>Check-in Tarihi:</label>
+                        <input
+                            type="date"
+                            value={checkin}
+                            onChange={(e) => setCheckin(e.target.value)}
+                        />
 
-                    <label>Check-out Tarihi:</label>
-                    <input
-                        type="date"
-                        value={checkout}
-                        onChange={(e) => setCheckout(e.target.value)}
-                    />
+                        <label>Check-out Tarihi:</label>
+                        <input
+                            type="date"
+                            value={checkout}
+                            onChange={(e) => setCheckout(e.target.value)}
+                        />
 
-                    <label>Yetişkin Sayısı:</label>
-                    <input
-                        type="number"
-                        value={adults}
-                        onChange={(e) => setAdults(Number(e.target.value))}
-                        min="1"
-                    />
+                        <label>Yetişkin Sayısı:</label>
+                        <input
+                            type="number"
+                            value={adults}
+                            onChange={(e) => setAdults(Number(e.target.value))}
+                            min="1"
+                        />
 
-                    <label>Çocuk Sayısı:</label>
-                    <input
-                        type="number"
-                        value={children}
-                        onChange={(e) => setChildren(Number(e.target.value))}
-                        min="0"
-                    />
+                        <label>Çocuk Sayısı:</label>
+                        <input
+                            type="number"
+                            value={children}
+                            onChange={(e) => setChildren(Number(e.target.value))}
+                            min="0"
+                        />
 
-                    <label>Telefon Numarası:</label>
-                    <input
-                        type="tel"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        pattern="[0-9]{10}"
-                    />
+                        <label>Telefon Numarası:</label>
+                        <input
+                            type="tel"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            pattern="[0-9]{10}"
+                        />
 
-                    <button type="submit">Rezervasyon Yap</button>
-                </form>
+                        <button type="submit">Rezervasyon Yap</button>
+                    </form>
+                </div>
             </div>
         </section>
 
