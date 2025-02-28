@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Form container */
-.form {
+.reservation-form-container form {
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Form title */
-.form h2 {
+.reservation-form-container form h2 {
   text-align: center;
   color: #333;
   font-size: 24px;
@@ -70,14 +70,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Input fields */
-.label {
+.reservation-form-container label {
   font-size: 16px;
   color: #555;
   margin-bottom: 8px;
   display: block;
 }
 
-.input {
+.reservation-form-container input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -89,14 +89,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Input focus effect */
-.input:focus {
+.reservation-form-container input:focus {
   outline: none;
   border-color: #4CAF50;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
 }
 
 /* Button styling */
-.button {
+.reservation-form-container button {
   width: 100%;
   padding: 15px;
   background-color: #4CAF50;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5 {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.reservation-form-container button:hover {
   background-color: #45a049;
 }
 
