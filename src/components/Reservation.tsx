@@ -8,7 +8,7 @@ const childrenInput = document.getElementById('children') as HTMLInputElement;
 const phoneInput = document.getElementById('phone') as HTMLInputElement;
 
 const Reservation: React.FC = () => {
-
+    const { t, language } = useLanguage();
     const [checkin, setCheckin] = useState('');
     const [checkout, setCheckout] = useState('');
     const [adults, setAdults] = useState(1);
