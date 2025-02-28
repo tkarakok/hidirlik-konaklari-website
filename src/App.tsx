@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Rooms from './components/Rooms';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import Reservation from './components/Reservation';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {

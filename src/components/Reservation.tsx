@@ -1,3 +1,5 @@
+import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 const form = document.getElementById('reservationForm') as HTMLFormElement;
 const checkinInput = document.getElementById('checkin') as HTMLInputElement;
 const checkoutInput = document.getElementById('checkout') as HTMLInputElement;
@@ -5,6 +7,7 @@ const adultsInput = document.getElementById('adults') as HTMLInputElement;
 const childrenInput = document.getElementById('children') as HTMLInputElement;
 const phoneInput = document.getElementById('phone') as HTMLInputElement;
 
+const Reservation : React.FC = () => {
 form?.addEventListener('submit', (event) => {
   event.preventDefault(); 
 
@@ -33,4 +36,5 @@ form?.addEventListener('submit', (event) => {
 
   // Formu sıfırlama (isteğe bağlı)
   form.reset();
-});
+})};
+export default Reservation;
