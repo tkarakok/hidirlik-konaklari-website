@@ -42,12 +42,12 @@ const Services: React.FC = () => {
     {
       translationKey: "breakfast",
       icon: <Coffee size={20} />,
-      image: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+      image: "./images/service1.jpg"
     },
     {
       translationKey: "cuisine",
       icon: <Utensils size={20} />,
-      image: "https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+      image: "./images/service2.jpg"
     },
     {
       translationKey: "wifi",
@@ -57,7 +57,7 @@ const Services: React.FC = () => {
     {
       translationKey: "tours",
       icon: <MapPin size={20} />,
-      image: "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+      image: "./images/service4.jpg"
     }
   ];
 
