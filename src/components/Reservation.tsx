@@ -7,34 +7,68 @@ const adultsInput = document.getElementById('adults') as HTMLInputElement;
 const childrenInput = document.getElementById('children') as HTMLInputElement;
 const phoneInput = document.getElementById('phone') as HTMLInputElement;
 
-const Reservation : React.FC = () => {
-form?.addEventListener('submit', (event) => {
-  event.preventDefault(); 
+const Reservation : React.FC= () => {
+    
+  const [checkin, setCheckin] = useState('');
+  const [checkout, setCheckout] = useState('');
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
+  const [phone, setPhone] = useState('');
 
-  // Formdan veri çekme
-  const checkinDate = checkinInput.value;
-  const checkoutDate = checkoutInput.value;
-  const adultsCount = parseInt(adultsInput.value);
-  const childrenCount = parseInt(childrenInput.value);
-  const phoneNumber = phoneInput.value;
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    console.log('Form submitted');
+  };
 
-  // Basit doğrulamalar (örnek)
-  if (!checkinDate || !checkoutDate || !adultsCount || !childrenCount || !phoneNumber) {
-    alert('Lütfen tüm alanları doldurduğunuzdan emin olun.');
-    return;
-  }
+  return (
+    <div style={{ padding: '20px', border: '1px solid black' }}>
+      <h2>Rezervasyon Yap</h2>
+      <form onSubmit={handleSubmit}>
+        <label>Check-in Tarihi:</label>
+        <input
+          type="date"
+          value={checkin}
+          onChange={(e) => setCheckin(e.target.value)}
+        />
+        <br />
 
-  // Rezervasyonu göster
-  alert(`
-    Rezervasyon Başarıyla Alındı!
-    - Check-in: ${checkinDate}
-    - Check-out: ${checkoutDate}
-    - Yetişkin Sayısı: ${adultsCount}
-    - Çocuk Sayısı: ${childrenCount}
-    - Telefon Numarası: ${phoneNumber}
-  `);
+        <label>Check-out Tarihi:</label>
+        <input
+          type="date"
+          value={checkout}
+          onChange={(e) => setCheckout(e.target.value)}
+        />
+        <br />
 
-  // Formu sıfırlama (isteğe bağlı)
-  form.reset();
-})};
+        <label>Yetişkin Sayısı:</label>
+        <input
+          type="number"
+          value={adults}
+          onChange={(e) => setAdults(Number(e.target.value))}
+        />
+        <br />
+
+        <label>Çocuk Sayısı:</label>
+        <input
+          type="number"
+          value={children}
+          onChange={(e) => setChildren(Number(e.target.value))}
+        />
+        <br />
+
+        <label>Telefon Numarası:</label>
+        <input
+          type="tel"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+        <br />
+
+        <button type="submit">Rezervasyon Yap</button>
+      </form>
+    </div>
+  );
+};
+
 export default Reservation;
+
