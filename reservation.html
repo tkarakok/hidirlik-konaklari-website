@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otel Rezervasyon</title>
+  <link rel="stylesheet" href="styles-reservation.css">
+</head>
+<body>
+
+  <div class="reservation">
+    <h2>Rezervasyon Yap</h2>
+    <form id="reservationForm">
+      <label for="checkin">Check-in Tarihi:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out Tarihi:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="adults">Yetişkin Sayısı:</label>
+      <input type="number" id="adults" name="adults" min="1" required>
+
+      <label for="children">Çocuk Sayısı:</label>
+      <input type="number" id="children" name="children" min="0" required>
+
+      <label for="phone">Telefon Numarası:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Telefon (10 haneli)" required>
+
+      <button type="submit">Rezervasyon Yap</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script> <!-- TypeScript derlenmiş JavaScript dosyası -->
+</body>
+</html>
