@@ -21,7 +21,9 @@ const Reservation : React.FC= () => {
   };
     return (
         <div className="reservation-form-container">
-        <h2> REZERVASYON TALEBİ </h2>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          REZERVASYON TALEBİ
+        </h1>
       <form onSubmit={handleSubmit}>
         <label>Check-in Tarihi:</label>
         <input
