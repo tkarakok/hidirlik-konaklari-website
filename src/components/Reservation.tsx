@@ -20,7 +20,8 @@ const Reservation : React.FC= () => {
     console.log('Form submitted');
   };
     return (
-    <div className="reservation-form-container">
+        <div className="reservation-form-container">
+        <h2> REZERVASYON TALEBİ </h2>
       <form onSubmit={handleSubmit}>
         <label>Check-in Tarihi:</label>
         <input
