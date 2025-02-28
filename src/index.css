@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Form container */
-form {
+.form {
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
@@ -62,7 +62,7 @@ form {
 }
 
 /* Form title */
-form h2 {
+.form h2 {
   text-align: center;
   color: #333;
   font-size: 24px;
@@ -70,14 +70,14 @@ form h2 {
 }
 
 /* Input fields */
-label {
+.label {
   font-size: 16px;
   color: #555;
   margin-bottom: 8px;
   display: block;
 }
 
-input {
+.input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -89,14 +89,14 @@ input {
 }
 
 /* Input focus effect */
-input:focus {
+.input:focus {
   outline: none;
   border-color: #4CAF50;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
 }
 
 /* Button styling */
-button {
+.button {
   width: 100%;
   padding: 15px;
   background-color: #4CAF50;
@@ -108,7 +108,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
   background-color: #45a049;
 }
 
