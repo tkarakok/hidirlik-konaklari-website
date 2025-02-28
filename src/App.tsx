@@ -18,6 +18,7 @@ function App() {
         <Services />
         <Rooms />
         <Gallery />
+        <Reservation/>
         <Footer />
       </div>
     </LanguageProvider>
