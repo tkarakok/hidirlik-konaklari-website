@@ -16,6 +16,7 @@ const translations = {
     'services': 'Hizmetlerimiz',
     'rooms': 'Odalarımız',
     'gallery': 'Galeri',
+    'reservation' : "Rezervasyon",
 
     // Hero
     'hero.title': 'TARİHİ MİMARİ MODERN KONAKLAMA',
@@ -56,7 +57,9 @@ const translations = {
     // Gallery
     'gallery.title': 'Galeri',
     'gallery.subtitle': 'Güzel otelimiz boyunca görsel bir yolculuğa çıkın ve Safranbolu\'nun büyüsünü yaşayın.',
-
+    // Gallery
+    'reservation.title': 'Rezervasyon Talebi',
+    'reservation.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
     // Footer
     'footer.description': 'Tarihi Safranbolu\'nun kalbinde otantik Osmanlı lüksünü yaşayın.',
     'footer.contact': 'İletişim',
