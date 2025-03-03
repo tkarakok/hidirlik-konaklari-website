@@ -57,9 +57,14 @@ const translations = {
     // Gallery
     'gallery.title': 'Galeri',
     'gallery.subtitle': 'Güzel otelimiz boyunca görsel bir yolculuğa çıkın ve Safranbolu\'nun büyüsünü yaşayın.',
-    // Gallery
+    // Reservation
     'reservation.title': 'Rezervasyon Talebi',
     'reservation.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
+
+    // Reservation
+    'virtual.tour.title': 'Rezervasyon Talebi',
+    'virtual.tour.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
+    
     // Footer
     'footer.description': 'Tarihi Safranbolu\'nun kalbinde otantik Osmanlı lüksünü yaşayın.',
     'footer.contact': 'İletişim',
