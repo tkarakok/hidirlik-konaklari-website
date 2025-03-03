@@ -15,7 +15,7 @@ interface TourScene {
     }[];
 }
 
-const VirtualTour: React.FC = () => {
+const PanaromaViewer: React.FC = () => {
     const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
     const [showInfo, setShowInfo] = useState(false);
     const viewerRef = useRef<HTMLDivElement>(null);
@@ -215,4 +215,4 @@ const VirtualTour: React.FC = () => {
     );
 };
 
-export default VirtualTour;
+export default PanaromaViewer;
