@@ -62,8 +62,8 @@ const translations = {
     'reservation.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
 
     // Reservation
-    'virtual.tour.title': 'Rezervasyon Talebi',
-    'virtual.tour.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
+    'tour.title': 'Rezervasyon Talebi',
+    'tour.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
     
     // Footer
     'footer.description': 'Tarihi Safranbolu\'nun kalbinde otantik Osmanlı lüksünü yaşayın.',
