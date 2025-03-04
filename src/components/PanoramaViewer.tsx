@@ -5,7 +5,7 @@ const PanoramaViewer: React.FC = () => {
   useEffect(() => {
     pannellum.viewer('panorama', {
       type: 'equirectangular',
-      panorama: '../public/images/background.jpg', // 360° görselinin yolu
+      panorama: '/images/background.jpg', // 360° görselinin yolu
       autoLoad: true,
       showControls: true,
       compass: true,
