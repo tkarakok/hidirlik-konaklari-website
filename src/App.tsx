@@ -38,7 +38,7 @@ function App() {
           aria-label="WhatsApp ile İletişime Geç"
         >
           <MessageCircle size={24} />
-          <span className="hidden md:inline">Bize Ulaşın</span>
+          <span className="hidden md:inline">Rezervasyon</span>
         </button>
 
       </div>
