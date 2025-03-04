@@ -1,19 +1,22 @@
 import React, { useEffect } from 'react';
-import pannellum from 'https://unpkg.com/pannellum/build/pannellum.js';
 
 const PanoramaViewer: React.FC = () => {
   useEffect(() => {
-    const viewer = pannellum.viewer('panorama', {
-      type: 'equirectangular',
-      panorama: '/images/background.jpg', // 360° görselinin yolu
-      autoLoad: true,
-      showControls: true,
-      compass: true,
-      title: 'Hıdırlık Konakları Sanal Turu',
-      author: 'Hıdırlık Konakları'
-    });
+    const pannellum = (window as any).pannellum; // Pannellum'u window'dan alıyoruz
 
-    return () => viewer.destroy(); // Component unmount olduğunda temizlik
+    if (pannellum) {
+      pannellum.viewer('panorama', {
+        type: 'equirectangular',
+        panorama: '/images/background.jpg', // Görselin yolu
+        autoLoad: true,
+        showControls: true,
+        compass: true,
+        title: 'Hıdırlık Konakları Sanal Turu',
+        author: 'Hıdırlık Konakları'
+      });
+    } else {
+      console.error('Pannellum yüklenemedi!');
+    }
   }, []);
 
   return <div id="panorama" style={{ width: '100%', height: '100vh' }}></div>;
