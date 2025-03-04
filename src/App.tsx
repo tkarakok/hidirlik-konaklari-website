@@ -31,15 +31,7 @@ function App() {
         <Reservation/>
         <Footer />
 
-        <button
-          onClick={handleWhatsAppClick}
-          className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center gap-2 z-50"
-          aria-label="WhatsApp ile İletişime Geç"
-        >
-          <MessageCircle size={24} />
-          <span className="hidden md:inline">Bize Ulaşın</span>
-        </button>
-
+        
       </div>
     </LanguageProvider>
   );
