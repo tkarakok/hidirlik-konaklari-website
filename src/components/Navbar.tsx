@@ -55,10 +55,7 @@ const Navbar: React.FC = () => {
                 className={`font-medium capitalize ${isScrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-secondary'} transition-colors`}
               >
                 {t(item)}
-              </button>
-            ))}
-            <LanguageSwitcher />
-            {/* WhatsApp Button */}
+                {/* WhatsApp Button */}
             <a
               href="https://wa.me/11234567890?text=Merhaba,%20yardımcı%20olur%20musunuz?"
               target="_blank"
@@ -67,6 +64,10 @@ const Navbar: React.FC = () => {
             >
               <img src="../public/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
             </a>
+              </button>
+            ))}
+            <LanguageSwitcher />
+            
           </div>
 
           {/* Mobile Menu Button */}
