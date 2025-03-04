@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import * as pannellum from 'https://unpkg.com/pannellum/build/pannellum.js';
 
 const PanoramaViewer: React.FC = () => {
   useEffect(() => {
-    pannellum.viewer('panorama', {
+    const viewer = pannellum.viewer('panorama', {
       type: 'equirectangular',
       panorama: '/images/background.jpg', // 360° görselinin yolu
       autoLoad: true,
@@ -12,6 +12,8 @@ const PanoramaViewer: React.FC = () => {
       title: 'Hıdırlık Konakları Sanal Turu',
       author: 'Hıdırlık Konakları'
     });
+
+    return () => viewer.destroy(); // Component unmount olduğunda temizlik
   }, []);
 
   return <div id="panorama" style={{ width: '100%', height: '100vh' }}></div>;
