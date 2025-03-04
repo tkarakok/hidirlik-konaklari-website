@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item}
@@ -62,29 +62,39 @@ const Navbar: React.FC = () => {
                 {t(item)}
               </button>
             ))}
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors"
-            >
-              <MessageCircle size={20} />
-              <span>WhatsApp</span>
-            </a>
-            <LanguageSwitcher />
+            <div className="flex items-center space-x-4">
+              <LanguageSwitcher />
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${
+                  isScrolled
+                    ? 'bg-green-500 hover:bg-green-600 text-white'
+                    : 'bg-white/90 hover:bg-white text-green-600'
+                }`}
+              >
+                <MessageCircle size={20} />
+                <span className="font-medium">WhatsApp</span>
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="md:hidden flex items-center space-x-3">
+            <LanguageSwitcher />
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg transition-colors"
+              className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${
+                isScrolled
+                  ? 'bg-green-500 hover:bg-green-600 text-white'
+                  : 'bg-white/90 hover:bg-white text-green-600'
+              }`}
             >
-              <MessageCircle size={18} />
+              <MessageCircle size={20} />
             </a>
-            <LanguageSwitcher />
             <button
               onClick={toggleMenu}
               className={`${isScrolled ? 'text-primary' : 'text-white'}`}
