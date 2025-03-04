@@ -26,9 +26,6 @@ const Reservation: React.FC = () => {
         setTimeout(() => {
             setSubmissionMessage('');
         }, 5000);
-
-        // Burada form verilerini e-posta ile gönderebiliriz (örneğin, emailjs veya başka bir servisi kullanarak)
-        console.log('Form submitted');
     };
 
     return (
@@ -41,52 +38,71 @@ const Reservation: React.FC = () => {
                     </p>
                 </div>
                 <div className="reservation-form-container">
-                    {submissionMessage && (
-                        <div className="bg-green-100 text-green-700 p-4 mb-4 rounded">
-                            {submissionMessage}
-                        </div>
-                    )}
-                    <form onSubmit={handleSubmit}>
+                    <form
+                        onSubmit={handleSubmit}
+                        method="POST"
+                        action="https://formspree.io/f/xpwqvvrp" // Formspree form ID
+                        data-netlify="true"
+                    >
                         <label>Check-in Tarihi:</label>
                         <input
                             type="date"
+                            name="checkin"
                             value={checkin}
                             onChange={(e) => setCheckin(e.target.value)}
+                            required
                         />
 
                         <label>Check-out Tarihi:</label>
                         <input
                             type="date"
+                            name="checkout"
                             value={checkout}
                             onChange={(e) => setCheckout(e.target.value)}
+                            required
                         />
 
                         <label>Yetişkin Sayısı:</label>
                         <input
                             type="number"
+                            name="adults"
                             value={adults}
                             onChange={(e) => setAdults(Number(e.target.value))}
                             min="1"
+                            required
                         />
 
                         <label>Çocuk Sayısı:</label>
                         <input
                             type="number"
+                            name="children"
                             value={children}
                             onChange={(e) => setChildren(Number(e.target.value))}
                             min="0"
+                            required
                         />
 
                         <label>Telefon Numarası:</label>
                         <input
                             type="tel"
+                            name="phone"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            pattern="[0-9]{11}"
+                            pattern="[0-9]{10}"
+                            required
                         />
 
-                        <button type="submit">Rezervasyon Yap</button>
+                        <button type="submit" className="bg-primary text-white px-4 py-2 rounded mt-4">
+                            Rezervasyon Yap
+                        </button>
                     </form>
+
+                    {/* Rezervasyon mesajı */}
+                    {submissionMessage && (
+                        <div className="bg-green-100 text-green-700 p-4 mt-4 rounded w-full text-center">
+                            {submissionMessage}
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
