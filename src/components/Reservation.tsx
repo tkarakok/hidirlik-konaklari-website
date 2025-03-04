@@ -19,13 +19,25 @@ const Reservation: React.FC = () => {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        // Form gönderildiğinde bir süre boyunca mesaj gösterilsin
-        setSubmissionMessage('Talebiniz alınmıştır!');
+        const formData = new FormData(event.target as HTMLFormElement);
 
-        // İsteğe bağlı: Mesajı 5 saniye sonra kaldırabiliriz
-        setTimeout(() => {
-            setSubmissionMessage('');
-        }, 5000);
+        // Formspree'ye veri gönderme
+        fetch('https://formspree.io/f/xpwqvvrp', {
+            method: 'POST',
+            body: formData,
+        })
+            .then((response) => {
+                if (response.ok) {
+                    // Form gönderildiğinde mesaj göster
+                    setSubmissionMessage('Rezervasyon talebiniz alınmıştır!');
+                } else {
+                    setSubmissionMessage('Bir hata oluştu. Lütfen tekrar deneyin.');
+                }
+            })
+            .catch((error) => {
+                setSubmissionMessage('Bir hata oluştu. Lütfen tekrar deneyin.');
+                console.log('Error:', error);
+            });
     };
 
     return (
@@ -38,12 +50,7 @@ const Reservation: React.FC = () => {
                     </p>
                 </div>
                 <div className="reservation-form-container">
-                    <form
-                        onSubmit={handleSubmit}
-                        method="POST"
-                        action="https://formspree.io/f/xpwqvvrp" // Formspree form ID
-                        data-netlify="true"
-                    >
+                    <form onSubmit={handleSubmit} method="POST" action="https://formspree.io/f/xpwqvvrp">
                         <label>Check-in Tarihi:</label>
                         <input
                             type="date"
