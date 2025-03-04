@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import * as pannellum from 'https://unpkg.com/pannellum/build/pannellum.js';
+import pannellum from 'https://unpkg.com/pannellum/build/pannellum.js';
 
 const PanoramaViewer: React.FC = () => {
   useEffect(() => {
