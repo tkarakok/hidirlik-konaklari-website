@@ -7,6 +7,7 @@ import Rooms from './components/Rooms';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Reservation from './components/Reservation';
+import PanoramaViewer from './components/PanoramaViewer';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Services />
         <Rooms />
+        <PanoramaViewer/>
         <Gallery />
         <Reservation/>
         <Footer />
