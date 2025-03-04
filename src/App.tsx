@@ -14,8 +14,8 @@ import { LanguageProvider } from './context/LanguageContext';
 function App() {
   const handleWhatsAppClick = () => {
     // Replace this with your actual WhatsApp number
-    const phoneNumber = '905555555555';
-    const message = 'Merhaba, Hıdırlık Konakları hakkında bilgi almak istiyorum.';
+    const phoneNumber = '+905411187825';
+    const message = 'Merhaba, Hıdırlık Konaklarına rezervasyon yaptırmak istiyorum.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
