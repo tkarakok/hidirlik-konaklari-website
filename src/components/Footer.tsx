@@ -15,14 +15,8 @@ const Footer: React.FC = () => {
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/hidirlik_konaklari/?locale=zh-hans&hl=af" className="text-white hover:text-primary transition-colors">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
@@ -36,11 +30,11 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-primary" />
-                <span className="text-gray-400">+90 123 456 7890</span>
+                <span className="text-gray-400">+90541 118 7825</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-primary" />
-                <span className="text-gray-400">info@ottomanhotel.com</span>
+                <span className="text-gray-400">info@hidirlikkonaklari.com</span>
               </li>
             </ul>
           </div>
