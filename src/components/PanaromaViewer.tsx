@@ -16,6 +16,7 @@ interface TourScene {
 }
 
 const PanaromaViewer: React.FC = () => {
+    const { t, language } = useLanguage();
     const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
     const [showInfo, setShowInfo] = useState(false);
     const viewerRef = useRef<HTMLDivElement>(null);
