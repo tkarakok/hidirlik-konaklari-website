@@ -7,7 +7,7 @@ const PanoramaViewer: React.FC = () => {
     if (pannellum) {
       pannellum.viewer('panorama', {
         type: 'equirectangular',
-        panorama: '/images/background.jpg', // Görselin yolu
+        panorama: '/images/rest.jpg', // Görselin yolu
         autoLoad: true,
         showControls: true,
         compass: true,
