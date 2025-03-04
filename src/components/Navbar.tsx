@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     }
   };
 
-  const navItems = ['home', 'about', 'services', 'rooms', 'gallery', 'reservation'];
+  const navItems = ['home', 'about', 'services', 'rooms', 'gallery'];
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
