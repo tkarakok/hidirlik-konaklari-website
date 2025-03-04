@@ -1,40 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { Pannellum } from 'pannellum-react';
-import { createRoot } from 'react-dom/client';
-import { ChevronRight, ChevronLeft, Info } from 'lucide-react';
+import React, { useEffect } from 'react';
 
-interface TourScene {
-  id: string;
-  title: string;
-  imageUrl: string;
-  description: string;
-  hotSpots?: {
-    pitch: number;
-    yaw: number;
-    type: string;
-    text: string;
-    sceneId?: string;
-  }[];
-}
 const PanoramaViewer: React.FC = () => {
-  const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
-  const [showInfo, setShowInfo] = useState(false);
+  useEffect(() => {
+    const pannellum = (window as any).pannellum; // Pannellum'u window'dan alıyoruz
 
-  // Sample tour scenes - replace with your actual hotel images
-  const tourScenes: TourScene[] = [
-    {
-      id: 'lobby',
-      title: 'Hotel Lobby',
-      imageUrl: '/images/rest.jpg',
-      description: 'Welcome to our elegant hotel lobby, where your luxury experience begins.',
-      hotSpots: [
-        {
-          pitch: 0,
-          yaw: 110,
-          type: 'scene',
-          text: 'Go to Restaurant',
-          sceneId: 'restaurant'
-        }
-      ]
-    },]}
+    if (pannellum) {
+      pannellum.viewer('panorama', {
+        type: 'equirectangular',
+        panorama: '/images/rest.jpg', // Görselin yolu
+        autoLoad: true,
+        showControls: true,
+        compass: true,
+        title: 'Hıdırlık Konakları Sanal Turu',
+        author: 'Hıdırlık Konakları'
+      });
+    } else {
+      console.error('Pannellum yüklenemedi!');
+    }
+  }, []);
+
+  return <div id="panorama" style={{ width: '100%', height: '100vh' }}></div>;
+};
+
 export default PanoramaViewer;
