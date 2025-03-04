@@ -66,12 +66,12 @@ const translations = {
     'tour.subtitle': 'Formu doldurarak rezrevasyon talebinde bulunabilinirsiz.',
     
     // Footer
-    'footer.description': 'Tarihi Safranbolu\'nun kalbinde otantik Osmanlı lüksünü yaşayın.',
+    'footer.description': 'Tarihi Safranbolu\'nun kalbinde geleneksel mimari ile modern konforun tadını çıkarın.',
     'footer.contact': 'İletişim',
-    'footer.address': 'Safranbolu Eski Şehir, Karabük, Türkiye',
+    'footer.address': 'Hıdırlık Tepesi Yanı Safranbolu/KARABÜK',
     'footer.quickLinks': 'Hızlı Bağlantılar',
     'footer.location': 'Konum',
-    'footer.locationDescription': 'Safranbolu\'nun UNESCO Dünya Mirası bölgesinde yer alan otelimiz, tarihi pazar meydanı ve diğer cazibe merkezlerine kısa bir yürüyüş mesafesindedir.',
+    'footer.locationDescription': 'Safranbolu\'nun UNESCO Dünya Mirası bölgesinde yer alan otelimiz, Hıdırlık Seyir Tepesinin yanında ve tarihi eski çarşıya 5 dk kısa bir yürüyüş mesafesindedir.',
     'footer.rights': 'Tüm hakları saklıdır.',
   },
   en: {

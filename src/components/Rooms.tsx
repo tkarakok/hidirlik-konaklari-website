@@ -49,12 +49,12 @@ const Rooms: React.FC = () => {
       tr: ["XL Boy Yatak", "Balkon", "Özel Banyo", "Oturma Alanı", "Klima","Ketıl Seti", "Mini Bar", "Kasa"]
     },
     standart2: {
-      en: ["1 Double & 1 Single Beds", "Garden View", "Private Bathroom", "Seating Area", "Cattle Set","Air Conditioning", "Safe"],
-      tr: ["1 Çift & 1 Tek Kişilik Yatak", "Bahçe Manzarası", "Özel Banyo","Oturma Alanı", "Ketıl Seti", "Klima", "Kasa"]
+      en: ["1 Double & 1 Single Beds", "Garden View", "Private Bathroom", "Seating Area","Mini Bar", "Cattle Set","Air Conditioning", "Safe"],
+      tr: ["1 Çift & 1 Tek Kişilik Yatak", "Bahçe Manzarası", "Özel Banyo","Oturma Alanı","Mini Bar", "Ketıl Seti", "Klima", "Kasa"]
     },
     family: {
-      en: ["1 Double & 1 Single Beds","Balcony", "Safranbolu View", "Private Bathroom", "Seating Area", "Air Conditioning", "Tea/Coffee Facilities"],
-      tr: ["1 Çift & 2 Tek Kişilik Yatak", "Balkon", "Safranbolu Manzarası", "Özel Banyo", "Oturma Alanı", "Klima", "Çay/Kahve İmkanları"]
+      en: ["1 Double & 1 Single Beds","Balcony", "Safranbolu View", "Private Bathroom", "Seating Area","Mini Bar", "Air Conditioning", "Tea/Coffee Facilities"],
+      tr: ["1 Çift & 2 Tek Kişilik Yatak", "Balkon", "Safranbolu Manzarası", "Özel Banyo", "Oturma Alanı","Mini Bar", "Klima", "Çay/Kahve İmkanları"]
     }
   };
 
