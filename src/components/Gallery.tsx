@@ -12,73 +12,113 @@ const Gallery: React.FC = () => {
   const { t, language } = useLanguage();
   
   const galleryImages = {
-    en: [
-      {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Hotel Exterior"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80",
-        caption: "Traditional Courtyard"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Ottoman Architecture"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-        caption: "Breakfast Area"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Traditional Turkish Tea Service"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Luxury Bathroom"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Hotel Lobby"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Safranbolu View"
-      }
-    ],
     tr: [
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Otel Dış Görünüm"
+        url: '/images/background.jpg',
+        caption: "Otel"
       },
       {
-        url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80",
-        caption: "Geleneksel Avlu"
+        url: '/images/oda1.jpg',
+        caption: "Oda"
       },
       {
-        url: "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Osmanlı Mimarisi"
+        url: '/images/oda2.jpg',
+        caption: "Oda"
       },
       {
-        url: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-        caption: "Kahvaltı Alanı"
+        url: '/images/oda3.jpg',
+        caption: "Oda"
       },
       {
-        url: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Geleneksel Türk Çay Servisi"
+        url: '/images/banyo1.jpg',
+        caption: "Banyo"
       },
       {
-        url: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Lüks Banyo"
+        url: '/images/manzara1.jpg',
+        caption: "Manzara"
       },
       {
-        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Otel Lobisi"
+        url: '/images/oda4.jpg',
+        caption: "Oda"
       },
       {
-        url: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        caption: "Safranbolu Manzarası"
-      }
+        url: '/images/restaurant.jpg',
+        caption: "Kahvaltı Salonu"
+      },
+      {
+        url: '/images/oda5.jpg',
+        caption: "Oda"
+      },
+      {
+        url: '/images/banyo2.jpg',
+        caption: "Banyo"
+      },
+      {
+        url: '/images/manzara2.jpg',
+        caption: "Manzara"
+      },
+      {
+        url: '/images/oda6.jpg',
+        caption: "Oda"
+      },
+      {
+        url: '/images/oda7.jpg',
+        caption: "Oda"
+      },
+    ],
+    en: [
+      {
+        url: '/images/background.jpg',
+        caption: "Otel"
+      },
+      {
+        url: '/images/oda1.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/oda2.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/oda3.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/banyo1.jpg',
+        caption: "Bathroom"
+      },
+      {
+        url: '/images/manzara1.jpg',
+        caption: "View"
+      },
+      {
+        url: '/images/oda4.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/restaurant.jpg',
+        caption: "Breakfast Saloon"
+      },
+      {
+        url: '/images/oda5.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/banyo2.jpg',
+        caption: "Bathroom"
+      },
+      {
+        url: '/images/manzara2.jpg',
+        caption: "View"
+      },
+      {
+        url: '/images/oda6.jpg',
+        caption: "Room"
+      },
+      {
+        url: '/images/oda7.jpg',
+        caption: "Room"
+      },
     ]
   };
 
