@@ -8,7 +8,6 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Reservation from './components/Reservation';
 import { LanguageProvider } from './context/LanguageContext';
-import PanaromaViewer from './components/PanaromaViewer';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <About />
         <Services />
         <Rooms />
-        <PanaromaViewer />
         <Gallery />
         <Reservation/>
         <Footer />
