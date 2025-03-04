@@ -45,14 +45,14 @@ const translations = {
 
     // Rooms
     'rooms.title': 'Odalarımız',
-    'rooms.subtitle': 'Osmanlı zarafetini modern konforla birleştiren güzelce restore edilmiş odalarımızla tarihe adım atın.',
+    'rooms.subtitle': 'Modern imkanlarla donatılan odalarımızla tarihin içinde rahatça konaklayın.',
     'rooms.features': 'Oda Özellikleri:',
-    'rooms.ottoman.title': 'Osmanlı Süiti',
-    'rooms.ottoman.description': 'Otantik Osmanlı dekorasyonu ve geniş yaşam alanları sunan en lüks konaklamamız.',
-    'rooms.heritage.title': 'Miras Odası',
-    'rooms.heritage.description': 'Konforunuz için modern olanaklarla geleneksel Türk mimarisinin büyüsünü yaşayın.',
+    'rooms.ottoman.title': 'Standart Tek Yataklı Oda',
+    'rooms.ottoman.description': 'Tek büyük yataktan oluşan modern balkonlu oda.',
+    'rooms.heritage.title': 'Standart Çift Yataklı Oda',
+    'rooms.heritage.description': '1 çift kişilik 1 tek kişilik yataktan oluşan balkonlu/balkonsuz odalar.',
     'rooms.family.title': 'Aile Odası',
-    'rooms.family.description': 'Ayrı uyuma alanları ve geleneksel mobilyalarla aileler için mükemmel geniş konaklama.',
+    'rooms.family.description': 'Aileler için dizayn edilmiş geniş suit odalar.',
 
     // Gallery
     'gallery.title': 'Galeri',

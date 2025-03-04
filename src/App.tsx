@@ -27,7 +27,6 @@ function App() {
         <About />
         <Services />
         <Rooms />
-        <PanoramaViewer/>
         <Gallery />
         <Reservation/>
         <Footer />

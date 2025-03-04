@@ -44,34 +44,34 @@ const Rooms: React.FC = () => {
   const { t, language } = useLanguage();
   
   const roomFeatures = {
-    ottoman: {
-      en: ["King Size Bed", "Private Balcony", "Hammam-style Bathroom", "Sitting Area", "Air Conditioning", "Mini Bar"],
-      tr: ["Kral Boy Yatak", "Özel Balkon", "Hamam Tarzı Banyo", "Oturma Alanı", "Klima", "Mini Bar"]
+    standart1: {
+      en: ["XL Size Bed", "Private Balcony", "Private Bathroom", "Sitting Area", "Cattle Set","Air Conditioning", "Mini Bar", "Safe"],
+      tr: ["XL Boy Yatak", "Özel Balkon", "Özel Banyo", "Oturma Alanı", "Klima","Ketıl Seti", "Mini Bar", "Kasa"]
     },
-    heritage: {
-      en: ["Queen Size Bed", "Garden View", "En-suite Bathroom", "Wooden Ceiling", "Air Conditioning", "Safe"],
-      tr: ["Kraliçe Boy Yatak", "Bahçe Manzarası", "Özel Banyo", "Ahşap Tavan", "Klima", "Kasa"]
+    standart2: {
+      en: ["1 Double & 1 Single Beds", "Garden View", "Private Bathroom", "Seating Area", "Cattle Set","Air Conditioning", "Safe"],
+      tr: ["1 Çift & 1 Tek Kişilik Yatak", "Bahçe Manzarası", "Özel Banyo","Oturma Alanı", "Ketıl Seti", "Klima", "Kasa"]
     },
     family: {
-      en: ["1 Double & 2 Single Beds", "Courtyard View", "Large Bathroom", "Seating Area", "Air Conditioning", "Tea/Coffee Facilities"],
-      tr: ["1 Çift & 2 Tek Kişilik Yatak", "Avlu Manzarası", "Geniş Banyo", "Oturma Alanı", "Klima", "Çay/Kahve İmkanları"]
+      en: ["1 Double & 1 Single Beds", "Safranbolu View", "Private Bathroom", "Seating Area", "Air Conditioning", "Tea/Coffee Facilities"],
+      tr: ["1 Çift & 2 Tek Kişilik Yatak", "Safranbolu Manzarası", "Özel Banyo", "Oturma Alanı", "Klima", "Çay/Kahve İmkanları"]
     }
   };
 
   const rooms = [
     {
-      translationKey: "ottoman",
-      image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      features: language === 'en' ? roomFeatures.ottoman.en : roomFeatures.ottoman.tr
+      translationKey: "standart1",
+      image: '/images/standart1.jpg',
+      features: language === 'en' ? roomFeatures.standart1.en : roomFeatures.standart1.tr
     },
     {
-      translationKey: "heritage",
-      image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-      features: language === 'en' ? roomFeatures.heritage.en : roomFeatures.heritage.tr
+      translationKey: "standart2",
+      image: '/images/standart2.jpg',
+      features: language === 'en' ? roomFeatures.standart2.en : roomFeatures.standart2.tr
     },
     {
       translationKey: "family",
-      image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      image: '/images/family.jpg',
       features: language === 'en' ? roomFeatures.family.en : roomFeatures.family.tr
     }
   ];
