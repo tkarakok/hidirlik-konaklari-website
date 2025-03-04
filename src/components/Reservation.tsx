@@ -82,7 +82,7 @@ const Reservation: React.FC = () => {
                             type="tel"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            pattern="[9]{11}"
+                            pattern="[0-9]{11}"
                         />
 
                         <button type="submit">Rezervasyon Yap</button>
