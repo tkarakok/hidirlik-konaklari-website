@@ -1,25 +1,49 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+const images = [
+  '/images/rest.jpg',
+  '/images/panorama2.jpg',
+  '/images/panorama3.jpg',
+  '/images/panorama4.jpg'
+];
 
 const PanoramaViewer: React.FC = () => {
-  useEffect(() => {
-    const pannellum = (window as any).pannellum; // Pannellum'u window'dan alıyoruz
+  const [currentImage, setCurrentImage] = useState(images[0]);
 
+  useEffect(() => {
+    const pannellum = (window as any).pannellum;
     if (pannellum) {
       pannellum.viewer('panorama', {
         type: 'equirectangular',
-        panorama: '/images/rest.jpg', // Görselin yolu
+        panorama: currentImage,
         autoLoad: true,
         showControls: true,
         compass: true,
         title: 'Hıdırlık Konakları Sanal Turu',
         author: 'Hıdırlık Konakları'
       });
-    } else {
-      console.error('Pannellum yüklenemedi!');
     }
-  }, []);
+  }, [currentImage]);
 
-  return <div id="panorama" style={{ width: '100%', height: '100vh' }}></div>;
+  return (
+    <div>
+      <div className="controls">
+        {images.map((image, index) => (
+          <button key={index} onClick={() => setCurrentImage(image)}>
+            Fotoğraf {index + 1}
+          </button>
+        ))}
+      </div>
+      <div id="panorama" style={{ width: '100%', height: '100vh' }}></div>
+    </div>
+  );
 };
+
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = createRoot(rootElement);
+  root.render(<PanoramaViewer />);
+}
 
 export default PanoramaViewer;
