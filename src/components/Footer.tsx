@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
         {/* Google Maps Integration */}
         <div className="mb-12 rounded-lg overflow-hidden shadow-lg">
           <iframe 
-            src="https://www.google.com/maps/place/H%C4%B1d%C4%B1rl%C4%B1k+Konaklar%C4%B1/@41.2434479,32.6964783,19.25z/data=!4m9!3m8!1s0x408354dc555557b7:0x64afb6858f38d750!5m2!4m1!1i2!8m2!3d41.2436807!4d32.6960321!16s%2Fg%2F11flc5_zv4?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D" 
+            src="https://maps.app.goo.gl/oQFmACZNjMZ5uzkt7" 
             width="100%" 
             height="450" 
             style={{ border: 0 }} 
