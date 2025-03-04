@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
-
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -60,6 +60,14 @@ const Navbar: React.FC = () => {
               </button>
             ))}
             <LanguageSwitcher />
+            <a
+              href="https://wa.me/11234567890?text=Merhaba,%20yardımcı%20olur%20musunuz?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-white ${isScrolled ? 'hover:text-primary' : 'hover:text-secondary'} transition-colors`}
+            >
+              <img src="/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,6 +101,9 @@ const Navbar: React.FC = () => {
       </div>
     </nav>
   );
+
+  
+
 };
 
 export default Navbar;
