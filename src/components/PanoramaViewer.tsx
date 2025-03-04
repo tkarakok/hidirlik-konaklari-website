@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as pannellum from 'https://unpkg.com/pannellum/build/pannellum.js';
 
 const PanoramaViewer: React.FC = () => {
   useEffect(() => {
     pannellum.viewer('panorama', {
       type: 'equirectangular',
-      panorama: '/images/360-image.jpg', // 360° görselinin yolu
+      panorama: '../public/images/background.jpg', // 360° görselinin yolu
       autoLoad: true,
       showControls: true,
       compass: true,
