@@ -50,7 +50,7 @@ const translations = {
     'rooms.standart1.title': 'Standart Tek Yataklı Oda',
     'rooms.standart1.description': 'Tek büyük yataktan oluşan modern balkonlu oda.',
     'rooms.standart2.title': 'Standart Çift Yataklı Oda',
-    'rooms.standart2.description': '1 çift kişilik 1 tek kişilik yataktan oluşan balkonlu/balkonsuz odalar.',
+    'rooms.standart2.description': 'Çift yatak bulunan balkonlu/balkonsuz odalar.',
     'rooms.family.title': 'Aile Odası',
     'rooms.family.description': 'Aileler için dizayn edilmiş geniş suit odalar.',
 
