@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X, Bed, Home } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -7,9 +7,6 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
-
-  const whatsappNumber = '+1234567890'; // Replace with your WhatsApp number
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,14 +40,14 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/images/logo.png" alt="Logo" style={{ width: '100px', height: '100px' }} />
+            <img src= "/images/logo.png" style={{ width: `100px`, height: `100px` }} />
             <span className={`font-serif text-xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
               
             </span>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item}
@@ -62,39 +59,12 @@ const Navbar: React.FC = () => {
                 {t(item)}
               </button>
             ))}
-            <div className="flex items-center space-x-4">
-              <LanguageSwitcher />
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${
-                  isScrolled
-                    ? 'bg-green-500 hover:bg-green-600 text-white'
-                    : 'bg-white/90 hover:bg-white text-green-600'
-                }`}
-              >
-                <MessageCircle size={20} />
-                <span className="font-medium">WhatsApp</span>
-              </a>
-            </div>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-3">
+          <div className="md:hidden flex items-center space-x-4">
             <LanguageSwitcher />
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${
-                isScrolled
-                  ? 'bg-green-500 hover:bg-green-600 text-white'
-                  : 'bg-white/90 hover:bg-white text-green-600'
-              }`}
-            >
-              <MessageCircle size={20} />
-            </a>
             <button
               onClick={toggleMenu}
               className={`${isScrolled ? 'text-primary' : 'text-white'}`}
