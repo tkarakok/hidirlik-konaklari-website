@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className={`text-white ${isScrolled ? 'hover:text-primary' : 'hover:text-secondary'} transition-colors`}
             >
-              <img src="/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
+              <img src="../public/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
             </a>
           </div>
 
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-primary"
               >
-                <img src="/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
+                <img src="../public/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 30, height: 30 }} />
               </a>
             </div>
           </div>
