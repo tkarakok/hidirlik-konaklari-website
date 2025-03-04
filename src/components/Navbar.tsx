@@ -58,16 +58,6 @@ const Navbar: React.FC = () => {
               </button>
             ))}
             <LanguageSwitcher />
-            
-            {/* WhatsApp Button */}
-            <a
-              href="https://wa.me/11234567890?text=Merhaba,%20yardımcı%20olur%20musunuz?"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whatsapp-button"
-            >
-              <img src="/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 40, height: 40 }} />
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,15 +82,6 @@ const Navbar: React.FC = () => {
                   {t(item)}
                 </button>
               ))}
-              {/* Mobile WhatsApp Button */}
-              <a
-                href="https://wa.me/11234567890?text=Merhaba,%20yardımcı%20olur%20musunuz?"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-primary"
-              >
-                <img src="/images/whatsapp-icon.png" alt="WhatsApp" style={{ width: 40, height: 40 }} />
-              </a>
             </div>
           </div>
         )}
