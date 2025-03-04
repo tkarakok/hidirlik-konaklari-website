@@ -14,27 +14,21 @@ const Reservation: React.FC = () => {
     const [adults, setAdults] = useState(1);
     const [children, setChildren] = useState(0);
     const [phone, setPhone] = useState('');
+    const [submissionMessage, setSubmissionMessage] = useState('');
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        // Formspree URL'yi buraya yerleştirin
-        const formData = new FormData(event.target as HTMLFormElement);
+        // Form gönderildiğinde bir süre boyunca mesaj gösterilsin
+        setSubmissionMessage('Talebiniz alınmıştır!');
 
-        fetch('https://formspree.io/f/xpwqvvrp', {
-            method: 'POST',
-            body: formData,
-        })
-            .then((response) => {
-                if (response.ok) {
-                    alert('Rezervasyon talebiniz alınmıştır!');
-                } else {
-                    alert('Bir hata oluştu. Lütfen tekrar deneyin.');
-                }
-            })
-            .catch((error) => {
-                console.log('Error:', error);
-            });
+        // İsteğe bağlı: Mesajı 5 saniye sonra kaldırabiliriz
+        setTimeout(() => {
+            setSubmissionMessage('');
+        }, 5000);
+
+        // Burada form verilerini e-posta ile gönderebiliriz (örneğin, emailjs veya başka bir servisi kullanarak)
+        console.log('Form submitted');
     };
 
     return (
@@ -47,11 +41,15 @@ const Reservation: React.FC = () => {
                     </p>
                 </div>
                 <div className="reservation-form-container">
-                    <form onSubmit={handleSubmit} method="POST" action="https://formspree.io/f/your-form-id">
+                    {submissionMessage && (
+                        <div className="bg-green-100 text-green-700 p-4 mb-4 rounded">
+                            {submissionMessage}
+                        </div>
+                    )}
+                    <form onSubmit={handleSubmit}>
                         <label>Check-in Tarihi:</label>
                         <input
                             type="date"
-                            name="checkin"
                             value={checkin}
                             onChange={(e) => setCheckin(e.target.value)}
                         />
@@ -59,7 +57,6 @@ const Reservation: React.FC = () => {
                         <label>Check-out Tarihi:</label>
                         <input
                             type="date"
-                            name="checkout"
                             value={checkout}
                             onChange={(e) => setCheckout(e.target.value)}
                         />
@@ -67,7 +64,6 @@ const Reservation: React.FC = () => {
                         <label>Yetişkin Sayısı:</label>
                         <input
                             type="number"
-                            name="adults"
                             value={adults}
                             onChange={(e) => setAdults(Number(e.target.value))}
                             min="1"
@@ -76,7 +72,6 @@ const Reservation: React.FC = () => {
                         <label>Çocuk Sayısı:</label>
                         <input
                             type="number"
-                            name="children"
                             value={children}
                             onChange={(e) => setChildren(Number(e.target.value))}
                             min="0"
@@ -85,7 +80,6 @@ const Reservation: React.FC = () => {
                         <label>Telefon Numarası:</label>
                         <input
                             type="tel"
-                            name="phone"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                             pattern="[0-9]{10}"
